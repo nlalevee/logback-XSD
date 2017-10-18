@@ -151,6 +151,11 @@
 			<xsd:element name="triggeringPolicy" minOccurs="0" maxOccurs="1" type="TriggeringPolicy"/>
 			<xsd:element name="appender-ref" minOccurs="0" maxOccurs="1" type="AppenderRef"/>
 			<xsd:element name="appender" minOccurs="0" maxOccurs="1" type="Appender"/>
+			<xsd:element name="queueSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+			<xsd:element name="discardingThreshold" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+			<xsd:element name="includeCallerData" minOccurs="0" maxOccurs="1" type="xsd:boolean"/>
+			<xsd:element name="maxFlushTime" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+			<xsd:element name="neverBlock" minOccurs="0" maxOccurs="1" type="xsd:boolean"/>
 			<xsd:any namespace="##other" processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:choice>
 		<xsd:attribute name="name" type="xsd:string" use="optional"/>
